@@ -83,7 +83,7 @@
   }
 
   /* ---------- Reveal on scroll (fiable, pas d'IntersectionObserver) ---------- */
-  var revealEls = [].slice.call(document.querySelectorAll(".reveal, .section-head, .bento-card, .m-step, .stat-cell, .work-row, .price-card, .review, .faq-list details, .about-copy, .about-emblem, .devis-form, .cta-copy"));
+  var revealEls = [].slice.call(document.querySelectorAll(".reveal, .section-head, .bento-card, .m-step, .stat-cell, .work-card, .glass-card, .review, .faq-list details, .about-copy, .about-emblem, .devis-form, .cta-copy"));
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
   if (heroSignal && revealEls.indexOf(heroSignal) === -1) revealEls.push(heroSignal);
 
@@ -183,6 +183,50 @@
         card.style.setProperty("--rx", "0deg");
       });
     });
+  }
+
+  /* ---------- Tarifs : toggle 1x / 3x + spotlight ---------- */
+  var pToggle = document.getElementById("pricingToggle");
+  if (pToggle) {
+    var pOpts = [].slice.call(pToggle.querySelectorAll(".pt-opt"));
+    var pKnob = pToggle.querySelector(".pt-knob");
+    var gCards = [].slice.call(document.querySelectorAll(".glass-card"));
+
+    function moveKnob(btn) {
+      pKnob.style.left = btn.offsetLeft + "px";
+      pKnob.style.width = btn.offsetWidth + "px";
+    }
+    function setMode(mode, btn) {
+      pOpts.forEach(function (o) { o.classList.toggle("is-active", o === btn); });
+      moveKnob(btn);
+      gCards.forEach(function (card) {
+        var amt = card.querySelector(".amt");
+        var unit = card.querySelector(".unit");
+        if (!amt) return;
+        amt.textContent = card.getAttribute("data-" + mode + "-amt");
+        if (unit) unit.textContent = card.getAttribute("data-" + mode + "-unit");
+        amt.classList.remove("anim"); void amt.offsetWidth; amt.classList.add("anim");
+      });
+    }
+    pOpts.forEach(function (o) {
+      o.addEventListener("click", function () { setMode(o.getAttribute("data-mode"), o); });
+    });
+    var activeOpt = pToggle.querySelector(".pt-opt.is-active") || pOpts[0];
+    if (activeOpt) { pKnob.style.transition = "none"; moveKnob(activeOpt); setTimeout(function () { pKnob.style.transition = ""; }, 50); }
+    window.addEventListener("resize", function () {
+      var a = pToggle.querySelector(".pt-opt.is-active"); if (a) { pKnob.style.transition = "none"; moveKnob(a); requestAnimationFrame(function () { pKnob.style.transition = ""; }); }
+    });
+
+    // Spotlight vert qui suit la souris sur chaque carte
+    if (!reduce && window.matchMedia("(pointer:fine)").matches) {
+      gCards.forEach(function (card) {
+        card.addEventListener("mousemove", function (e) {
+          var r = card.getBoundingClientRect();
+          card.style.setProperty("--mx", (e.clientX - r.left) + "px");
+          card.style.setProperty("--my", (e.clientY - r.top) + "px");
+        });
+      });
+    }
   }
 
   /* ---------- Footer year ---------- */

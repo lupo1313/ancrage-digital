@@ -268,51 +268,93 @@
     <!-- ===================== TARIFS ===================== -->
     <section class="section pricing" id="tarifs">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head center">
           <span class="tag mono">// Tarifs · 04</span>
           <h2>Des prix clairs, adaptés à votre budget.</h2>
-          <p>Fourchettes indicatives pour un ordre d'idée. Le prix final dépend du projet, et on trouve toujours une solution, même avec un budget serré.</p>
+          <p>Des fourchettes pour un ordre d'idée. Le prix final dépend du projet, et on s'adapte, même avec un budget serré. Payable en une fois ou en 3× sans frais.</p>
         </div>
-        <div class="price-grid">
-          <article class="price-card" data-tilt>
-            <span class="p-idx mono">01</span>
-            <h3>Landing page</h3>
-            <div class="price"><em>à partir de</em><strong>750€</strong></div>
-            <ul>
-              <li>Une page unique &amp; percutante</li>
-              <li>Optimisée conversion</li>
-              <li>100% responsive</li>
-              <li>Mise en ligne incluse</li>
-            </ul>
-            <a href="#devis" class="btn btn-line btn-full">Demander un devis</a>
-          </article>
-          <article class="price-card price-card--popular" data-tilt>
-            <span class="p-flag mono">◆ le plus choisi</span>
-            <span class="p-idx mono">02</span>
-            <h3>Site vitrine</h3>
-            <div class="price"><em>projet complet</em><strong>900€ – 2000€</strong></div>
-            <ul>
-              <li>Plusieurs pages sur mesure</li>
-              <li>Optimisé SEO local</li>
-              <li>Formulaire de devis</li>
-              <li>Fiche Google mise en place</li>
-            </ul>
-            <a href="#devis" class="btn btn-cta btn-full" data-magnetic>Demander un devis</a>
-            <div class="b-glow"></div>
-          </article>
-          <article class="price-card" data-tilt>
-            <span class="p-idx mono">03</span>
-            <h3>Site e-commerce</h3>
-            <div class="price"><em>boutique en ligne</em><strong>1300€ – 3000€</strong></div>
-            <ul>
-              <li>Boutique simple &amp; solide</li>
-              <li>Paiement sécurisé</li>
-              <li>Gestion des produits</li>
-              <li>Formation incluse</li>
-            </ul>
-            <a href="#devis" class="btn btn-line btn-full">Demander un devis</a>
-          </article>
+
+        <div class="pricing-toggle" id="pricingToggle" role="group" aria-label="Mode de paiement">
+          <button type="button" class="pt-opt is-active" data-mode="once">Paiement 1×</button>
+          <button type="button" class="pt-opt" data-mode="split">Paiement 3× <span class="pt-badge mono">sans frais</span></button>
+          <span class="pt-knob" aria-hidden="true"></span>
         </div>
+
+        <div class="price-scroll" id="priceScroll">
+          <div class="price-track">
+            <article class="glass-card"
+              data-once-amt="750€" data-once-unit="en 1 fois"
+              data-split-amt="250€" data-split-unit="&times; 3 · sans frais">
+              <div class="gc-glow" aria-hidden="true"></div>
+              <div class="gc-body">
+                <span class="gc-idx mono">01</span>
+                <h3>Landing page</h3>
+                <div class="gc-price">
+                  <span class="gc-kicker mono">à partir de</span>
+                  <div class="gc-amount"><strong class="amt">750€</strong><span class="unit">en 1 fois</span></div>
+                </div>
+                <p class="gc-desc">Une page unique et redoutable, pour une offre précise ou une campagne.</p>
+                <div class="gc-div"></div>
+                <ul class="gc-feats">
+                  <li><span class="chk"></span>Une page sur mesure</li>
+                  <li><span class="chk"></span>Optimisée pour la conversion</li>
+                  <li><span class="chk"></span>100% responsive mobile</li>
+                  <li><span class="chk"></span>Mise en ligne incluse</li>
+                </ul>
+                <a href="#devis" class="gc-btn">Demander un devis</a>
+              </div>
+            </article>
+
+            <article class="glass-card glass-card--popular"
+              data-once-amt="900€" data-once-unit="en 1 fois"
+              data-split-amt="300€" data-split-unit="&times; 3 · sans frais">
+              <span class="gc-flag">Le plus choisi</span>
+              <div class="gc-glow" aria-hidden="true"></div>
+              <div class="gc-body">
+                <span class="gc-idx mono">02</span>
+                <h3>Site vitrine</h3>
+                <div class="gc-price">
+                  <span class="gc-kicker mono">à partir de · 900 à 2000€</span>
+                  <div class="gc-amount"><strong class="amt">900€</strong><span class="unit">en 1 fois</span></div>
+                </div>
+                <p class="gc-desc">Le projet le plus choisi : plusieurs pages, pensées pour ramener des clients.</p>
+                <div class="gc-div"></div>
+                <ul class="gc-feats">
+                  <li><span class="chk"></span>Plusieurs pages sur mesure</li>
+                  <li><span class="chk"></span>Optimisé SEO local</li>
+                  <li><span class="chk"></span>Formulaire de devis</li>
+                  <li><span class="chk"></span>Fiche Google mise en place</li>
+                </ul>
+                <a href="#devis" class="gc-btn gc-btn--primary" data-magnetic>Demander un devis</a>
+              </div>
+            </article>
+
+            <article class="glass-card"
+              data-once-amt="1300€" data-once-unit="en 1 fois"
+              data-split-amt="434€" data-split-unit="&times; 3 · sans frais">
+              <div class="gc-glow" aria-hidden="true"></div>
+              <div class="gc-body">
+                <span class="gc-idx mono">03</span>
+                <h3>Site e-commerce</h3>
+                <div class="gc-price">
+                  <span class="gc-kicker mono">à partir de · 1300 à 3000€</span>
+                  <div class="gc-amount"><strong class="amt">1300€</strong><span class="unit">en 1 fois</span></div>
+                </div>
+                <p class="gc-desc">Une boutique simple et solide pour vendre en ligne sans prise de tête.</p>
+                <div class="gc-div"></div>
+                <ul class="gc-feats">
+                  <li><span class="chk"></span>Boutique simple &amp; solide</li>
+                  <li><span class="chk"></span>Paiement sécurisé</li>
+                  <li><span class="chk"></span>Gestion des produits</li>
+                  <li><span class="chk"></span>Formation à la prise en main</li>
+                </ul>
+                <a href="#devis" class="gc-btn">Demander un devis</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="scroll-hint mono" aria-hidden="true">glissez pour comparer &rarr;</div>
+
         <div class="price-addons mono">
           <span>📍 Fiche Google &amp; SEO local — <b>150€/mois</b></span>
           <span>🛠 Maintenance &amp; hébergement — <b>400€/an</b></span>
