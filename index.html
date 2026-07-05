@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ancrage Digital — Studio web & SEO local à Marseille</title>
+  <meta name="description" content="Ancrage Digital, studio web à Marseille. On conçoit des sites premium, rapides et pensés pour vous placer en tête des recherches Google locales. Marseille, Bouches-du-Rhône, Var et toute la France." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ancrage Digital — Studio web & SEO local" />
+  <meta property="og:description" content="Des sites qui vous rendent visibles sur Google, localement." />
+  <meta property="og:url" content="https://ancrage-digital.fr/" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="canonical" href="https://ancrage-digital.fr/" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B0F0E'/%3E%3Cpath d='M16 6C11.6 6 8 9.4 8 13.8 8 19.6 16 27 16 27s8-7.4 8-13.2C24 9.4 20.4 6 16 6z' fill='none' stroke='%2300D084' stroke-width='1.8'/%3E%3Cpath d='M12.8 20C13.5 16.5 14.6 13.4 16 10.8 M16 10.8L19.2 20 M13.7 16h4.6' fill='none' stroke='%2300D084' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='10.5' r='1.7' fill='%2300D084'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=2" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Ancrage Digital",
+    "description": "Studio de création de sites web et référencement local pour les pros à Marseille.",
+    "url": "https://ancrage-digital.fr/",
+    "email": "contact@ancrage-digital.fr",
+    "telephone": "+33600000000",
+    "priceRange": "€€",
+    "areaServed": ["Marseille", "Aix-en-Provence", "Bouches-du-Rhône", "Var", "France"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Marseille", "addressCountry": "FR" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <!-- spotlight glow (suit la souris) -->
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+  <!-- grain -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Ancrage Digital">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <path d="M20 5C14.5 5 10 9.3 10 14.8 10 22 20 33 20 33s10-11 10-18.2C30 9.3 25.5 5 20 5z" fill="none" stroke="var(--green)" stroke-width="2"/>
+            <path d="M15.8 24C16.7 19.5 18 14.9 20 10.6 M20 10.6L24.2 24 M17 18.6h6" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="10.3" r="2.1" fill="var(--green)"/>
+          </svg>
+        </span>
+        <span class="brand-text">Ancrage<span class="brand-dim">Digital</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <a href="#services"><span class="nav-idx">01</span>Services</a>
+        <a href="#methode"><span class="nav-idx">02</span>Méthode</a>
+        <a href="#realisations"><span class="nav-idx">03</span>Réalisations</a>
+        <a href="#tarifs"><span class="nav-idx">04</span>Tarifs</a>
+        <a href="#faq"><span class="nav-idx">05</span>FAQ</a>
+        <a href="#devis" class="btn btn-cta nav-cta" data-magnetic>Démarrer un projet</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="menu-scrim" id="menuScrim"></div>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow reveal"><span class="pulse"></span>Studio web · SEO local · Marseille &amp; France</p>
+
+        <h1 class="hero-title">
+          <span class="line"><span class="w">Des</span> <span class="w">sites</span> <span class="w">qui</span> <span class="w">vous</span></span>
+          <span class="line"><span class="w">rendent</span> <span class="w green" data-signal>visibles</span></span>
+          <span class="line"><span class="w">sur</span> <span class="w">Google,</span> <span class="w dim">localement.</span></span>
+        </h1>
+
+        <div class="hero-foot">
+          <p class="hero-lead reveal">Studio à taille humaine pour artisans, commerçants et indépendants. On conçoit des sites premium et rapides, puis on vous place là où vos clients cherchent vraiment.</p>
+          <div class="hero-cta reveal">
+            <a href="#devis" class="btn btn-cta" data-magnetic>Démarrer un projet</a>
+            <a href="#realisations" class="btn btn-line" data-magnetic>Voir le travail</a>
+          </div>
+        </div>
+
+        <!-- Visuel signal : courbe de visibilité qui grimpe -->
+        <div class="hero-signal reveal" aria-hidden="true">
+          <div class="signal-head">
+            <span class="mono">visibilite.google</span>
+            <span class="signal-badge"><span class="pulse pulse--sm"></span>en direct</span>
+          </div>
+          <svg class="signal-graph" viewBox="0 0 340 150" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--green)" stop-opacity=".28"/>
+                <stop offset="100%" stop-color="var(--green)" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g class="grid">
+              <line x1="0" y1="38" x2="340" y2="38"/><line x1="0" y1="75" x2="340" y2="75"/><line x1="0" y1="112" x2="340" y2="112"/>
+            </g>
+            <path class="signal-fill" d="M0,130 C60,120 90,100 130,92 C175,83 200,60 250,40 C285,26 315,18 340,12 L340,150 L0,150 Z" fill="url(#fillGrad)"/>
+            <path class="signal-line" d="M0,130 C60,120 90,100 130,92 C175,83 200,60 250,40 C285,26 315,18 340,12" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle class="signal-dot" cx="340" cy="12" r="4.5" fill="var(--green)"/>
+          </svg>
+          <div class="signal-foot">
+            <div><span class="mono dim">position</span><strong>#1</strong></div>
+            <div><span class="mono dim">recherches</span><strong>locales</strong></div>
+            <div><span class="mono dim">tendance</span><strong class="green">↑ +214%</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Sites vitrines</span><i>◆</i><span>SEO local</span><i>◆</i><span>Fiche Google</span><i>◆</i><span>E-commerce</span><i>◆</i><span>Landing pages</span><i>◆</i><span>Performance</span><i>◆</i><span>Design sur mesure</span><i>◆</i>
+          <span>Sites vitrines</span><i>◆</i><span>SEO local</span><i>◆</i><span>Fiche Google</span><i>◆</i><span>E-commerce</span><i>◆</i><span>Landing pages</span><i>◆</i><span>Performance</span><i>◆</i><span>Design sur mesure</span><i>◆</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MANIFESTO ===================== -->
+    <section class="manifesto">
+      <div class="container">
+        <span class="tag mono">// Notre conviction</span>
+        <p class="manifesto-text" id="manifesto">
+          Un beau site ne suffit pas. On construit des sites qui <b>rankent</b>, qui <b>convertissent</b>, et qui <b>ancrent</b> votre entreprise exactement là où vos clients la cherchent.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES (bento) ===================== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag mono">// Services · 01</span>
+          <h2>Tout ce qu'il faut pour exister en ligne, et rien de superflu.</h2>
+        </div>
+        <div class="bento">
+          <article class="bento-card bento-lg" data-tilt>
+            <span class="b-idx mono">01</span>
+            <div class="b-body">
+              <h3>Fiche Google &amp; SEO local</h3>
+              <p>Le cœur de notre travail. On optimise votre présence sur Google et Maps pour que les clients de votre secteur tombent sur vous en premier.</p>
+            </div>
+            <span class="b-tag">Le plus demandé</span>
+            <div class="b-glow"></div>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="b-idx mono">02</span>
+            <div class="b-body"><h3>Site vitrine</h3><p>Le site de référence de votre activité. Clair, rapide, pensé pour convertir.</p></div>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="b-idx mono">03</span>
+            <div class="b-body"><h3>Landing page</h3><p>Une page unique et redoutable pour une offre précise ou une campagne.</p></div>
+          </article>
+          <article class="bento-card" data-tilt>
+            <span class="b-idx mono">04</span>
+            <div class="b-body"><h3>Site e-commerce</h3><p>Une boutique simple et solide pour vendre en ligne sans prise de tête.</p></div>
+          </article>
+          <article class="bento-card bento-wide" data-tilt>
+            <span class="b-idx mono">05</span>
+            <div class="b-body"><h3>Maintenance, suivi &amp; conseil</h3><p>Mises à jour, sécurité, évolutions et un interlocuteur unique et joignable. Votre site reste rapide, à jour, et vous gardez l'esprit tranquille.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== METHODE (sticky) ===================== -->
+    <section class="section method" id="methode">
+      <div class="container method-grid">
+        <div class="method-intro">
+          <span class="tag mono">// Méthode · 02</span>
+          <h2>Un process carré, sans blabla.</h2>
+          <p>De la première discussion à la mise en ligne, vous savez toujours où on en est. Simple, transparent, efficace.</p>
+        </div>
+        <div class="method-steps">
+          <div class="m-line"><span class="m-line-fill" id="mLineFill"></span></div>
+          <div class="m-step" data-step>
+            <span class="m-num mono">01</span>
+            <div><h3>On échange</h3><p>On parle de votre activité, vos clients, vos objectifs. Devis clair, sans jargon ni engagement.</p></div>
+          </div>
+          <div class="m-step" data-step>
+            <span class="m-num mono">02</span>
+            <div><h3>On conçoit</h3><p>Design sur mesure, code propre, optimisé pour Google dès la première ligne. Vous validez à chaque étape.</p></div>
+          </div>
+          <div class="m-step" data-step>
+            <span class="m-num mono">03</span>
+            <div><h3>On vous rend visible</h3><p>Mise en ligne, fiche Google optimisée, suivi de position. Votre courbe commence à grimper.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS / VISIBILITE ===================== -->
+    <section class="section stats">
+      <div class="container">
+        <div class="section-head center">
+          <span class="tag mono">// Visibilité locale</span>
+          <h2>Être trouvé par les gens qui sont près de chez vous.</h2>
+        </div>
+        <div class="stat-row">
+          <div class="stat-cell"><strong data-count="80" data-suffix="%">0</strong><span>des recherches locales sur mobile mènent à un contact*</span></div>
+          <div class="stat-cell"><strong data-count="3">0</strong><span>résultats en tête de Google captent l'essentiel des clics*</span></div>
+          <div class="stat-cell"><strong class="green">#1</strong><span>l'objectif : votre métier, votre ville</span></div>
+          <div class="stat-cell"><strong data-count="24" data-suffix="h">0</strong><span>délai de réponse à votre demande de devis</span></div>
+        </div>
+        <p class="stat-note mono">*Tendances générales du référencement local, à titre indicatif.</p>
+      </div>
+    </section>
+
+    <!-- ===================== REALISATIONS ===================== -->
+    <section class="section works" id="realisations">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag mono">// Réalisations · 03</span>
+          <h2>Déjà en ligne, pour de vrais pros locaux.</h2>
+        </div>
+        <div class="work-grid">
+          <a href="https://m13menuiseries.fr" target="_blank" rel="noopener" class="work-card" data-tilt>
+            <div class="browser">
+              <div class="browser-bar"><span></span><span></span><span></span><em>m13menuiseries.fr</em></div>
+              <div class="browser-screen">
+                <img src="assets/realisations/m13-home.jpg" alt="Page d'accueil du site M13 Menuiseries, artisan menuisier à Marseille" loading="lazy" width="1280" height="800" />
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-head"><h3>M13 Menuiseries</h3><span class="work-go">↗</span></div>
+              <p>Site vitrine multipage + blog SEO local pour un menuisier à Marseille. Fenêtres, volets, climatisation.</p>
+              <div class="work-tags mono"><span>Vitrine</span><span>SEO local</span><span>Blog</span></div>
+            </div>
+          </a>
+          <a href="https://lupo1313.github.io/terre-de-provence" target="_blank" rel="noopener" class="work-card" data-tilt>
+            <div class="browser">
+              <div class="browser-bar"><span></span><span></span><span></span><em>terre-de-provence</em></div>
+              <div class="browser-screen">
+                <img src="assets/realisations/terre-home.jpg" alt="Page d'accueil du site Terre de Provence, primeur et épicerie fine à Marseille" loading="lazy" width="1280" height="800" />
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-head"><h3>Terre de Provence</h3><span class="work-go">↗</span></div>
+              <p>Vitrine premium pour un primeur &amp; épicerie fine à Marseille. Refonte moderne et locale.</p>
+              <div class="work-tags mono"><span>Vitrine</span><span>Refonte</span><span>Local</span></div>
+            </div>
+          </a>
+        </div>
+        <a href="#devis" class="work-cta">
+          <span>Votre projet pourrait être la prochaine réalisation ici.</span>
+          <em>Démarrer mon projet →</em>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== TARIFS ===================== -->
+    <section class="section pricing" id="tarifs">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag mono">// Tarifs · 04</span>
+          <h2>Des prix clairs, adaptés à votre budget.</h2>
+          <p>Fourchettes indicatives pour un ordre d'idée. Le prix final dépend du projet, et on trouve toujours une solution, même avec un budget serré.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card" data-tilt>
+            <span class="p-idx mono">01</span>
+            <h3>Landing page</h3>
+            <div class="price"><em>à partir de</em><strong>750€</strong></div>
+            <ul>
+              <li>Une page unique &amp; percutante</li>
+              <li>Optimisée conversion</li>
+              <li>100% responsive</li>
+              <li>Mise en ligne incluse</li>
+            </ul>
+            <a href="#devis" class="btn btn-line btn-full">Demander un devis</a>
+          </article>
+          <article class="price-card price-card--popular" data-tilt>
+            <span class="p-flag mono">◆ le plus choisi</span>
+            <span class="p-idx mono">02</span>
+            <h3>Site vitrine</h3>
+            <div class="price"><em>projet complet</em><strong>900€ – 2000€</strong></div>
+            <ul>
+              <li>Plusieurs pages sur mesure</li>
+              <li>Optimisé SEO local</li>
+              <li>Formulaire de devis</li>
+              <li>Fiche Google mise en place</li>
+            </ul>
+            <a href="#devis" class="btn btn-cta btn-full" data-magnetic>Demander un devis</a>
+            <div class="b-glow"></div>
+          </article>
+          <article class="price-card" data-tilt>
+            <span class="p-idx mono">03</span>
+            <h3>Site e-commerce</h3>
+            <div class="price"><em>boutique en ligne</em><strong>1300€ – 3000€</strong></div>
+            <ul>
+              <li>Boutique simple &amp; solide</li>
+              <li>Paiement sécurisé</li>
+              <li>Gestion des produits</li>
+              <li>Formation incluse</li>
+            </ul>
+            <a href="#devis" class="btn btn-line btn-full">Demander un devis</a>
+          </article>
+        </div>
+        <div class="price-addons mono">
+          <span>📍 Fiche Google &amp; SEO local — <b>150€/mois</b></span>
+          <span>🛠 Maintenance &amp; hébergement — <b>400€/an</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== A PROPOS ===================== -->
+    <section class="section about" id="apropos">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="tag mono">// Le studio</span>
+          <h2>Un studio local, pas une usine à sites.</h2>
+          <p>On crée des sites pro, propres et efficaces pour aider les artisans, commerçants et indépendants à être visibles sur Google, sans passer par une grosse agence compliquée.</p>
+          <p>Un seul interlocuteur, qui parle simplement, comprend le terrain et reste joignable après la mise en ligne. Pas de blabla, pas de coûts cachés. Juste un site qui vous ramène des clients.</p>
+          <div class="about-tags mono"><span>◆ Humain</span><span>◆ Local</span><span>◆ Premium</span><span>◆ Efficace</span></div>
+        </div>
+        <div class="about-emblem" aria-hidden="true">
+          <div class="emblem">
+            <svg viewBox="0 0 120 120" width="120" height="120">
+              <circle cx="60" cy="60" r="52" fill="none" stroke="var(--green)" stroke-width="1" opacity=".3"/>
+              <path d="M60 26C48 26 39 35 39 47 39 63 60 88 60 88s21-25 21-41C81 35 72 26 60 26z" fill="none" stroke="var(--green)" stroke-width="2.5"/>
+              <circle cx="60" cy="44" r="5.5" fill="none" stroke="var(--green)" stroke-width="2.5"/>
+              <path d="M60 49.5v17M49 60c0 5.4 4.7 9.5 11 9.5s11-4.1 11-9.5M53 54h14" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <span class="emblem-ring emblem-ring--1"></span>
+            <span class="emblem-ring emblem-ring--2"></span>
+          </div>
+          <p class="mono">ancré à Marseille<br>au service de toute la France</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AVIS ===================== -->
+    <section class="section reviews">
+      <div class="container">
+        <div class="section-head"><span class="tag mono">// Ils nous ont fait confiance</span><h2>Ce qu'en disent les clients.</h2></div>
+        <div class="review-grid">
+          <blockquote class="review" data-tilt><p>[À REMPLACER] Avis client. Le résultat obtenu et la relation de travail.</p><cite>José<span class="mono">M13 Menuiseries · Marseille</span></cite></blockquote>
+          <blockquote class="review" data-tilt><p>[À REMPLACER] Avis client. Un mot sur le sérieux, la réactivité, le rendu.</p><cite>Terre de Provence<span class="mono">Primeur &amp; épicerie fine</span></cite></blockquote>
+          <blockquote class="review" data-tilt><p>[À REMPLACER] Avis client. Un artisan satisfait de sa visibilité locale.</p><cite>Artisan local<span class="mono">Bouches-du-Rhône</span></cite></blockquote>
+          <blockquote class="review" data-tilt><p>[À REMPLACER] Avis client. Un commerçant qui a gagné en demandes de devis.</p><cite>Commerçant local<span class="mono">Marseille</span></cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section faq" id="faq">
+      <div class="container faq-wrap">
+        <div class="section-head"><span class="tag mono">// FAQ · 05</span><h2>Les questions qu'on nous pose.</h2></div>
+        <div class="faq-list">
+          <details><summary><span class="mono q-idx">01</span>Combien de temps pour avoir mon site ?<span class="chev"></span></summary><p>En général de quelques jours à deux semaines selon le projet et votre réactivité pour les contenus. Le délai est fixé dès le devis.</p></details>
+          <details><summary><span class="mono q-idx">02</span>Suis-je propriétaire de mon site ?<span class="chev"></span></summary><p>Oui, à 100%. Le site, le nom de domaine et les contenus vous appartiennent. Vous n'êtes prisonnier de personne.</p></details>
+          <details><summary><span class="mono q-idx">03</span>Vous travaillez uniquement à Marseille ?<span class="chev"></span></summary><p>Basés à Marseille, on intervient dans les Bouches-du-Rhône et le Var, et on travaille à distance partout en France.</p></details>
+          <details><summary><span class="mono q-idx">04</span>C'est quoi le référencement local ?<span class="chev"></span></summary><p>L'ensemble des actions qui font apparaître votre entreprise quand on cherche votre métier dans votre secteur, sur Google et Maps. Site optimisé + fiche Google soignée.</p></details>
+          <details><summary><span class="mono q-idx">05</span>Et si j'ai un petit budget ?<span class="chev"></span></summary><p>On s'adapte. On commence par l'essentiel puis on fait évoluer le site dans le temps. L'important, c'est d'être visible rapidement.</p></details>
+          <details><summary><span class="mono q-idx">06</span>Y a-t-il des frais cachés ?<span class="chev"></span></summary><p>Non. Le devis est clair et détaillé. Les seuls coûts récurrents éventuels (hébergement, maintenance, fiche Google) sont annoncés à l'avance.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DEVIS ===================== -->
+    <section class="section cta-section" id="devis">
+      <div class="container cta-grid">
+        <div class="cta-copy">
+          <span class="tag mono">// Démarrer</span>
+          <h2>On parle de votre projet ?</h2>
+          <p>Décrivez votre activité en quelques mots. On revient vers vous rapidement avec un premier conseil et un devis clair, sans engagement.</p>
+          <div class="cta-direct mono">
+            <a href="tel:+33600000000"><span>tél</span>06 XX XX XX XX</a>
+            <a href="mailto:contact@ancrage-digital.fr"><span>mail</span>contact@ancrage-digital.fr</a>
+          </div>
+        </div>
+        <form class="devis-form" id="devisForm" novalidate>
+          <div class="form-row">
+            <label><span class="mono">01 / nom ou entreprise</span><input type="text" name="nom" required placeholder="Ex : Menuiserie Dupont" /></label>
+          </div>
+          <div class="form-row two">
+            <label><span class="mono">02 / téléphone</span><input type="tel" name="telephone" placeholder="06 12 34 56 78" /></label>
+            <label><span class="mono">03 / email</span><input type="email" name="email" required placeholder="vous@email.fr" /></label>
+          </div>
+          <div class="form-row">
+            <label><span class="mono">04 / votre besoin</span>
+              <select name="besoin">
+                <option value="Fiche Google / SEO local">Fiche Google / SEO local</option>
+                <option value="Site vitrine">Site vitrine</option>
+                <option value="Landing page">Landing page</option>
+                <option value="Site e-commerce">Site e-commerce</option>
+                <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row">
+            <label><span class="mono">05 / votre projet</span><textarea name="message" rows="4" placeholder="Votre activité, votre ville, ce que vous cherchez..."></textarea></label>
+          </div>
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn btn-cta btn-full" data-magnetic>Envoyer la demande <span aria-hidden="true">→</span></button>
+          <p class="form-status mono" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#top" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="26" height="26">
+                <path d="M20 5C14.5 5 10 9.3 10 14.8 10 22 20 33 20 33s10-11 10-18.2C30 9.3 25.5 5 20 5z" fill="none" stroke="var(--green)" stroke-width="2"/>
+                <path d="M15.8 24C16.7 19.5 18 14.9 20 10.6 M20 10.6L24.2 24 M17 18.6h6" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="10.3" r="2.1" fill="var(--green)"/>
+              </svg>
+            </span>
+            <span class="brand-text">Ancrage<span class="brand-dim">Digital</span></span>
+          </a>
+          <p>Studio web &amp; SEO local. Ancré à Marseille, au service de toute la France.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h4 class="mono">Studio</h4><a href="#services">Services</a><a href="#methode">Méthode</a><a href="#realisations">Réalisations</a><a href="#tarifs">Tarifs</a></div>
+          <div class="footer-col"><h4 class="mono">Contact</h4><a href="tel:+33600000000">06 XX XX XX XX</a><a href="mailto:contact@ancrage-digital.fr">contact@ancrage-digital.fr</a><a href="#devis">Démarrer un projet</a></div>
+          <div class="footer-col"><h4 class="mono">Zone</h4><span>Marseille</span><span>Aix-en-Provence</span><span>BdR &amp; Var</span><span>Toute la France</span></div>
+        </div>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">ANCRAGE</div>
+      <div class="footer-bottom mono">
+        <span>© <span id="year"></span> Ancrage Digital</span>
+        <span><a href="#">Mentions légales</a></span>
+        <a href="#top" class="to-top">Haut de page ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
